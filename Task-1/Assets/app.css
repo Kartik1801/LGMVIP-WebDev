@@ -5,14 +5,13 @@ html{
 }
 
 .navbar{
-    padding: 0 7.5%;
+    padding: 0.5% 7.5%;
     padding-right: .5%;
     background-color:rgba(0,0,0,0.75)
 }
 .navbar-toggler{
     padding:0;
 }
-
 .carousal-section{
     width: 100%;
     margin: auto;
@@ -39,11 +38,49 @@ html{
     font-size:18px;
     font-weight:400;
 }
+.about-section {
+    margin: 5% 0;
+    padding: 0 12.5%;
+}
+.about-section h1{
+    text-align:center;
+    margin: 7.5% 0;
+}
+.about{
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    padding:0;
+}
+.about-info{
+    width:50%;
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    color:#8f8f8f;
+    text-align: left;
+    line-height: 1.75rem;
+}
+.about-info p{
+    margin: auto;
+}
+.about-img{
+    width:50%;
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.img-thumbnail{
 
+    width: 200px;
+    height:200px;
+    border: none;
+    border-radius: 50%;
+}
 
 @media (max-width: 720px){
     .navbar{
-        padding: 0 5%;
+        padding: 0.25 5%;
         padding-right: 2.5%;
     }
     .carousel-item img{
@@ -56,5 +93,21 @@ html{
     .carousel-caption p{
         font-size:10px;
         font-weight:400;
+    }
+    .about-section {
+        padding: 0 7.5%;
+    }
+    .about{
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-content: center;
+    }
+    .about-info{
+        width:100%;
+        text-align: center;
+    }
+    .about-img{
+        width: 100%;
     }
 }
