@@ -5,7 +5,8 @@ html{
 }
 
 .navbar{
-    padding:0;
+    padding: 0 7.5%;
+    padding-right: .5%;
     background-color:rgba(0,0,0,0.75)
 }
 .navbar-toggler{
@@ -25,12 +26,14 @@ html{
     position: absolute;
     top: 20%;
     right:10%;
+    width: 60%;
     text-align: left;
     color: #fff;
 }
 .carousel-caption h1{
-    font-size:24px;
+    font-size:32px;
     font-weight:700;
+    margin-bottom: 2.5%
 }
 .carousel-caption p{
     font-size:18px;
@@ -39,6 +42,10 @@ html{
 
 
 @media (max-width: 720px){
+    .navbar{
+        padding: 0 5%;
+        padding-right: 2.5%;
+    }
     .carousel-item img{
         height:320px;
     }
@@ -47,7 +54,7 @@ html{
         font-weight:700;
     }
     .carousel-caption p{
-        font-size:8px;
+        font-size:10px;
         font-weight:400;
     }
 }
