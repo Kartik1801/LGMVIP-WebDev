@@ -16,7 +16,9 @@ html{
 }
 
 /* SECTION-1 */
-
+.c-icon{
+    width: 25px;
+}
 .carousal-section{
     width: 100%;
     margin: auto;
@@ -50,7 +52,7 @@ html{
     margin: 5% 0;
     padding: 0 12.5%;
 }
-.about-section .title h1{
+ .title h1{
     text-align:center;
     margin: 5% 0;
     margin-bottom:10%;
@@ -153,8 +155,6 @@ html{
 }
 
 /* SECTION-3 */
-
-
 
 @media (max-width: 720px){
     .navbar{
