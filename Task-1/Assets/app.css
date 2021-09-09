@@ -42,9 +42,10 @@ html{
     margin: 5% 0;
     padding: 0 12.5%;
 }
-.about-section h1{
+.about-section .title h1{
     text-align:center;
     margin: 7.5% 0;
+    letter-spacing:2.5;
 }
 .about{
     display:flex;
@@ -55,6 +56,7 @@ html{
 .about-info{
     width:50%;
     display:flex;
+    padding-left: 5%;
     justify-content: space-around;
     align-content: center;
     color:#8f8f8f;
