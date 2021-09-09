@@ -4,27 +4,32 @@ html{
     font-size:20px
 }
 
+/* NAVIGATION SECTION*/
+
 .navbar{
-    padding: 0.5% 7.5%;
+    padding: 1% 7.5%;
     padding-right: .5%;
     background-color:rgba(0,0,0,0.75)
 }
 .navbar-toggler{
     padding:0;
 }
+
+/* SECTION-1 */
+
 .carousal-section{
     width: 100%;
     margin: auto;
     padding: 0;
 }
 .carousel-item img{
-    height: 512px;
+    height: 680px;
     width: 100%;
 }
 .carousel-caption{
     position: absolute;
     top: 20%;
-    right:10%;
+    right:15%;
     width: 60%;
     text-align: left;
     color: #fff;
@@ -38,6 +43,9 @@ html{
     font-size:18px;
     font-weight:400;
 }
+
+/* SECTION-2 */
+
 .about-section {
     margin: 5% 0;
     padding: 0 12.5%;
@@ -45,14 +53,16 @@ html{
 .about-section .title h1{
     text-align:center;
     margin: 7.5% 0;
-    letter-spacing:2.5;
+    margin-bottom:10%;
+    line-height:2rem ;
+    letter-spacing:5px;
 }
 .about{
     display:flex;
     justify-content: space-around;
     align-content: center;
     padding:0;
-}
+}   
 .about-info{
     width:50%;
     display:flex;
@@ -64,6 +74,7 @@ html{
     line-height: 1.75rem;
 }
 .about-info p{
+    font-size:24px;
     margin: auto;
 }
 .about-img{
@@ -73,11 +84,26 @@ html{
     align-content: center;
 }
 .img-thumbnail{
-
-    width: 200px;
+    width: 250px;
     height:200px;
     border: none;
     border-radius: 50%;
+}
+.about-cards{
+    display: flex;
+    justify-content: space-around;
+}
+.about-cards .card {
+    height:200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:30%;
+}
+.card-icon{
+    width: 75px;
+    height: 75px;
 }
 
 @media (max-width: 720px){
@@ -109,7 +135,27 @@ html{
         width:100%;
         text-align: center;
     }
+    .about-info p{
+        font-size: 18px;
+    }
     .about-img{
         width: 100%;
+    }
+    .img-thumbnail{
+        height: 150px;
+        width: 80%;
+    }
+    .about-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .about-cards .card {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width:100%;
+        border: none;
+        border-bottom: 1px solid #aaa;
     }
 }
