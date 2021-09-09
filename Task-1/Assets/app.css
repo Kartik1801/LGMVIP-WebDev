@@ -52,10 +52,10 @@ html{
 }
 .about-section .title h1{
     text-align:center;
-    margin: 7.5% 0;
+    margin: 5% 0;
     margin-bottom:10%;
     line-height:2rem ;
-    letter-spacing:5px;
+    letter-spacing:2.5px;
 }
 .about{
     display:flex;
@@ -71,11 +71,11 @@ html{
     align-content: center;
     color:#8f8f8f;
     text-align: left;
-    line-height: 1.75rem;
+    line-height: 1rem;
 }
 .about-info p{
-    font-size:24px;
-    margin: auto;
+    font-size:20px;
+    margin: 2.5% 0;
 }
 .about-img{
     width:50%;
@@ -90,21 +90,71 @@ html{
     border-radius: 50%;
 }
 .about-cards{
+    margin-top: 10%;
+    margin: auto;
+    width: 100%;
+    padding:2.5% 0;
+    padding-bottom:2.5%;
+    border-bottom: #8f8f8f solid 1px;
+    border-radius: 1%; 
     display: flex;
     justify-content: space-around;
 }
 .about-cards .card {
-    height:200px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    padding: 2.5% 0;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width:30%;
 }
-.card-icon{
-    width: 75px;
-    height: 75px;
+.card-title {
+    color: #4C4C6D;
+    padding: 2.5%;
+    margin: 1.25%;
+    letter-spacing:1.5;
+    font-size:20px;
+    font-weight:600;
 }
+.card-content{
+    color:#8f8f8f;
+    line-height: 1.15;
+    font-size:14px;
+    padding: 2.5% 0;
+    margin-left: 2.5%;
+    padding-left: 10%;
+    text-align: left;
+}
+.card-btn{
+    margin: 5% 0;
+    width: 100%;
+}
+.card-btn button{
+    border: none;
+    border-radius:2.5%;
+    width: fit-content;
+    padding: 2.5% 7.5%;
+    letter-spacing:1.15 ;
+    font-size:14px;
+    font-weight:600;
+    color: #fff;
+    background-color: #4C4C6D;
+}
+.card-btn button:hover{
+    color: #4C4C6D;
+    background-color: #FFC947;
+}
+.card-icon{
+    width: 55px;
+    height: 55px;
+}
+
+/* SECTION-3 */
+
+
 
 @media (max-width: 720px){
     .navbar{
@@ -146,16 +196,25 @@ html{
         width: 80%;
     }
     .about-cards{
+        margin: 20% 0;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        border:none;
     }
     .about-cards .card {
-        flex-direction: row;
+        height: 75%;
+        padding: 10% 2.5%;       
+        width: 100%;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        width:100%;
         border: none;
-        border-bottom: 1px solid #aaa;
+        border-bottom: 1px solid #8f8f8f;
     }
+    .card-content{
+        font-size:14px;
+        padding: 5% 2.5%;
+        text-align: center;    }
+    
 }
