@@ -216,6 +216,9 @@ html{
 }
 
 /* SECTION-4 */
+.pricing-section{
+    margin-bottom:5%;
+}
 .pricing-section .title h1{
     margin-bottom: 5% 0;
 }
@@ -292,6 +295,23 @@ border-right: solid 1px #8f8f8f ;
     background-color: var(--pr-btn-color);
 }
 
+/* SECTION-5 */
+
+.video-section{
+    padding:5%;
+    color: #cfcfcf;
+    background-color: #4C4Caf;
+}
+.video-section .title .h1{
+    margin-bottom: 5% 0;
+}
+.video-section .carousel-item, video-section .carousel-item .active{
+    display: flex;
+    justify-content:center;
+}
+video{
+    height: 380px;
+}
 
 @media (max-width: 720px){
     .navbar{
@@ -355,11 +375,13 @@ border-right: solid 1px #8f8f8f ;
         text-align: center;    
     }
     .pricing-cards{
-        justify-content: space-around;
+        justify-content: center;
         align-content: space-around;
     }
     .pr-card{
-        width: fit-content;
+        border:none;
+        padding:2.5%;
+        width:33%;
     }
     
 }
