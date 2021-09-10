@@ -215,6 +215,83 @@ html{
     width:100%;
 }
 
+/* SECTION-4 */
+.pricing-section .title h1{
+    margin-bottom: 5% 0;
+}
+.pricing-section{
+    display: flex;
+    flex-direction: column;
+}
+.pricing-cards{
+    margin: 0;
+    --cost-color: #8f8f8f;
+    --pr-btn-bg-color: #FFC947;
+    --pr-btn-color: #4C4C6D;   
+    display: flex;
+    justify-content: center;
+}
+.pr-card{
+    margin: 0;
+    padding:0;
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.pr-card:nth-of-type(1),.pr-card:nth-of-type(2){
+border-right: solid 1px #8f8f8f ;
+}
+.pr-title{
+    text-align: center;
+    width: 100%;
+    font-size:14px;
+    font-weight: 700;
+    letter-spacing:3.5;
+}
+.pr-cost{
+    width: 100%;
+    color: var(--cost-color);
+    margin: 0;
+    text-align: center;
+    font-size:12px;
+    font-weight:500;
+}
+.pr-info{
+    width: 100%;
+    text-align:center;
+    padding:2.5%;
+    margin: 2.5% 0;
+}
+.pr-info li{
+    font-size:12px;
+    line-height:1.25;
+    letter-spacing:3;
+    font-weight:700;
+    list-style: none;
+}
+.pr-btn{
+    display: flex;
+    justify-content: center;
+}
+.pr-btn button{
+    margin: 5% 0;
+    border: none;
+    color: var(--pr-btn-color);
+    background-color: var(--pr-btn-bg-color);
+    border-radius:2.5%;
+    width: fit-content;
+    padding: 3% 5%;
+    letter-spacing: 4;
+    font-size:12px;
+    font-weight:700;
+}
+.pr-btn button:hover{
+    color:#cfcfcf;
+    background-color: var(--pr-btn-color);
+}
+
 
 @media (max-width: 720px){
     .navbar{
@@ -275,6 +352,14 @@ html{
     .card-content{
         font-size:14px;
         padding: 5% 2.5%;
-        text-align: center;    }
+        text-align: center;    
+    }
+    .pricing-cards{
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    .pr-card{
+        width: fit-content;
+    }
     
 }
