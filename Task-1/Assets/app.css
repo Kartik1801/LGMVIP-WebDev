@@ -332,6 +332,44 @@ video{
     height: 380px;
 }
 
+/* SECTION-6 */
+
+.team-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.team-member{
+    margin: 2.5% 0;
+    display: flex;
+    text-align: center;
+    flex-direction:column;
+    justify-content:center;
+    align-content:space-around;
+}
+.team-member img{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    box-shadow:  #4C4C6D;
+    border-radius: 50%;
+}
+.team-member .name{
+    margin: 5%;
+    margin-bottom:2%;
+    font-size:12px;
+    font-weight: 700;
+    letter-spacing:3.5;
+}
+.team-member .position{
+    color: #8f8f8f;
+    margin: auto;
+    text-align: center;
+    font-size:12px;
+    font-weight:500;
+
+}
+
 @media (max-width: 720px){
     .navbar{
         padding: 0.25 5%;
