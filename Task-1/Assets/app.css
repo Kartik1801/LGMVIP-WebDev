@@ -9,7 +9,7 @@ html{
 .navbar{
     padding: 1% 7.5%;
     padding-right: .5%;
-    background-color:rgba(0,0,0,0.75)
+    background-color:rgba(0,0,0,0.25)
 }
 .navbar-toggler{
     padding:0;
@@ -35,6 +35,25 @@ html{
     width: 60%;
     text-align: left;
     color: #fff;
+}
+.carousel-btn{
+    margin: 5% 0;
+    width: 100%;
+}
+.carousel-btn button{
+    border: none;
+    border-radius:2.5%;
+    width: auto;
+    padding: 1.25% 2.5%;
+    letter-spacing:1.15 ;
+    font-size:10px;
+    font-weight:600;
+    color: #fff;
+    background-color: #4C4C6D;
+}
+.carousel-btn button:hover{
+    color: #4C4C6D;
+    background-color: #FFC947;
 }
 .carousel-caption h1{
     font-size:32px;
@@ -320,6 +339,9 @@ video{
     }
     .carousel-item img{
         height:320px;
+    }
+    .carousel-caption{
+        width: 70%;
     }
     .carousel-caption h1{
         font-size:24px;
