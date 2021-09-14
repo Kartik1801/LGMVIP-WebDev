@@ -374,6 +374,7 @@ video{
 
 
 /* SECTION-7 */
+
 .life-at-section{
     display: flex;
     flex-direction: column;
@@ -411,7 +412,7 @@ video{
 .slider-arrow .fa{
     color: #fff;
 }
-.slider-arrow:hover {
+.slider-arrow:hover{
     background-color: rebeccapurple;
 }
 .slide-wrapper{
@@ -429,8 +430,7 @@ video{
     flex-wrap: nowrap;
     overflow-x: auto;
 }
-#slider::-webkit-scrollbar
-{
+#slider::-webkit-scrollbar{
     display:none;
 }
 .thumbnail{
@@ -442,16 +442,15 @@ video{
     margin: 5px;
     transition: all .3s ease;
 }
-
 .thumbnail:hover{
     opacity: 1;
     transform: scale(2);
 }
 
-/* SECTION- */
+/* SECTION- 8*/
 
 .news-section{
-    background:url(/Assets/images/arto-marttinen-a2ntpw5HJgg-unsplash.jpg);
+    background:url(../Assets/images/arto-marttinen-a2ntpw5HJgg-unsplash.jpg);
     background-size:cover;
     padding: 2%;
     padding-bottom: 5%;
@@ -498,7 +497,7 @@ video{
     background-color: #FFC947;
 }
 
-/* SECTION-8 */
+/* SECTION-9 */
 
 .blog-section .title h1{
     margin: 2.5%;
@@ -564,7 +563,7 @@ video{
     background-color: #FFC947;
 }
 
-/* SECTION-9 */
+/* SECTION-10 */
 .connect-section{
     margin: 2.5% 0;
     background-color:#FFC947;
@@ -646,33 +645,39 @@ input:focus, textarea:focus{
     margin-bottom: 10%;
     text-align: center;
 }
-
 .f-head{
     font-size:11px;
     letter-spacing:1.5px;
     font-weight: 900;
-    margin: 5%;
+    margin: 2%;
+}
+.f-head-i{
+    font-size:11px;
+    letter-spacing:1.5px;
+    font-weight: 900;
+    margin: 2%;
 }
 .f-content li{
     list-style: none;
-    font-size:11px;
+    font-size:12px;
     font-weight: 500;
 }
 .f-icons{
     display: flex;
     flex-direction: column;
+    justify-content:flex-start;
     list-style: none;
 }
-
 .f-icons li{
+    margin: 0;
     display: flex;
     flex-direction: row;
+    align-content: flex-start;
     justify-content:center;
 }
-
 .f-icons li a {
     color:black;
-    margin: 2.5%;
+    margin: 0 2% ;
 }
 
 @media (max-width: 720px){
