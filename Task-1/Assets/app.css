@@ -374,7 +374,8 @@ video{
 /* SECTION-7 */
 
 .news-section{
-    background:url(/Assets/images/wolfgang-hasselmann-xpgXz5Yp3cM-unsplash.jpg);
+    background:url(/Assets/images/arto-marttinen-a2ntpw5HJgg-unsplash.jpg);
+    background-size:cover;
     padding: 2%;
     padding-bottom: 5%;
     color:#fff;
@@ -579,6 +580,21 @@ input:focus, textarea:focus{
     list-style: none;
     font-size:11px;
     font-weight: 500;
+}
+.f-icons{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.f-icons li{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.f-icons li i{
+    margin: 2%;
 }
 
 @media (max-width: 720px){
