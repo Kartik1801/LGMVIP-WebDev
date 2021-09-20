@@ -8,7 +8,7 @@ export const NavbarComp = ({onClick}) => {
                 <Navbar.Brand href="/#">Let's Grow More</Navbar.Brand>
                 <Nav>
                     <Nav.Item> 
-                        <Button variant="outline-primary" onClick={onClick}>Get Users</Button>
+                        <Button variant="outline-primary" onClick={onClick}>GET USERS</Button>
                     </Nav.Item>
                 </Nav>
             </Container>

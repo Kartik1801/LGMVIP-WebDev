@@ -1,34 +1,28 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavbarComp } from './nav';
 import { CardComp } from './cards';
 import { Container, Row } from 'react-bootstrap';
 import { useState } from 'react';
 import axios from 'axios';
-
+import './App.css';
 
 function App(props) {
-
   
   const [isUser, setIsUser] = useState(false);
-  const [loading, setLoading] = useState(false);
   const [userList, setUserList] = useState([]);
   const [error, setError] = useState(false)
   
-  const getUsers = () => {
-    setLoading(true)
-    axios.get('https://reqres.in/api/users?page=1')
-      .then((user) => {
-        setIsUser(true)
-        setUserList(user.data.data)
-        setLoading(false);
-      })
-      .catch((error) => {
-        setError(error.response.data)
-        setLoading(false);
-      })
-  }
-  
+  const getUsers = () =>{
+      axios.get('https://reqres.in/api/users?page=1')
+        .then((user) => {
+          setIsUser(true)
+          setUserList(user.data.data)
+        })
+        .catch((error) => {
+          setError(error.response.data)
+        })
+      }
+
   return (
     <div className="App">
     <NavbarComp onClick={getUsers} />
@@ -51,8 +45,7 @@ function App(props) {
       })}
     </Row>
     </Container>
-  </div>
-  );
+  </div> );
 }
 
 export default App;

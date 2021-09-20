@@ -7,7 +7,7 @@ export const CardComp = ({imgSrc, firstName, lastName, email, userId}) => {
         <Card>
             <Card.Img  src={imgSrc} />
             <Card.Body style={{marginLeft:"5%"}}>
-                <Card.Title style={{fontWeight: "700"}}>{firstName} {lastName}</Card.Title>
+                <Card.Title style={{fontWeight: "700"}}>{firstName.toUpperCase()} {lastName.toUpperCase()}</Card.Title>
                 <Card.Text>
                  <a href={`mailto:${email}`}>{email}</a> <br />
                  User ID: {userId}
